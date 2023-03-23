@@ -1,0 +1,135 @@
+<html>
+<head>
+    <title>
+        Keyboard
+    </title>
+    
+    <style>
+        .display{
+            width: 50%;
+            height: 10%;
+            margin-left: 240px;
+            margin-top: 50px;
+        }
+        .button{
+            margin-left: 190px;
+            margin-top: 50px;
+            font-size: 50%;
+        }
+        .row{
+            height:7.1%;
+            width:7.1%;
+            border-radius: 0.3cm;
+        }
+        .button1{
+            margin-top: 20px;
+            margin-left: 230px;
+        }
+        .button2{
+            margin-top: 20px;
+            margin-left: 210px;
+        }
+        .cap{
+            height: 7.1%;
+            width: 10%;
+            border-radius: 0.3cm;
+        }
+        .back{
+            height: 7.1%;
+            width: 10%;
+            border-radius: 0.3cm;
+        }
+        .space{
+            height: 7.1%;
+            width: 20%;
+            border-radius: 0.3cm;
+        }
+        .button3{
+            margin-top: 10px;
+            margin-left: 290px;
+        }
+        .lag{
+            border-radius: 0.3cm;
+            height: 7.1%;
+            width: 7.1%;
+        }
+        .num{
+            border-radius: 0.3cm;
+            height: 7.1%;
+            width: 7.1%;
+        }
+        .enter{
+            border-radius: 0.3cm;
+            height: 7.1%;
+            width: 9%;
+        }
+    </style>
+    <script>
+        function display.box.value(){
+            var showdata=document.getElementById('letter').value;
+        }
+    </script>
+</head>
+<body>
+    <div class="textbox">
+        <form name="display">
+            <textarea name="box" class="display" height="50%" width="100%"></textarea>
+            <div class="button">
+            <input type="button" class="row" value="q" onclick="display.box.value+='q'">
+            <input type="button" class="row" value="w" onclick="display.box.value+='w'">
+            <input type="button" class="row" value="e" onclick="display.box.value+='e'">
+            <input type="button" class="row" value="r" onclick="display.box.value+='r'">
+            <input type="button" class="row" value="t" onclick="display.box.value+='t'">
+            <input type="button" class="row" value="y" onclick="display.box.value+='y'">
+            <input type="button" class="row" value="u" onclick="display.box.value+='u'">
+            <input type="button" class="row" value="i" onclick="display.box.value+='i'">
+            <input type="button" class="row" value="o" onclick="display.box.value+='o'">
+            <input type="button" class="row" value="p" onclick="display.box.value+='p'">
+            </form>
+            </div>
+            <div class="button1">
+                <input type="button" class="row" value="a" onclick="display.box.value+='a'">
+                <input type="button" class="row" value="s" onclick="display.box.value+='s'">
+                <input type="button" class="row" value="d" onclick="display.box.value+='d'">
+                <input type="button" class="row" value="f" onclick="display.box.value+='g'">
+                <input type="button" class="row" value="g" onclick="display.box.value+='t'">
+                <input type="button" class="row" value="h" onclick="display.box.value+='h'">
+                <input type="button" class="row" value="j" onclick="display.box.value+='j'">
+                <input type="button" class="row" value="k" onclick="display.box.value+='k'">
+                <input type="button" class="row" value="l" onclick="display.box.value+='l'">    
+            </div>
+            <div class="button2">
+                <a href="caps.html">
+                <input type="button" class="cap" value="caps"></a>
+                <input type="button" class="row" value="z" onclick="display.box.value+='z'">
+                <input type="button" class="row" value="x" onclick="display.box.value+='x'">
+                <input type="button" class="row" value="c" onclick="display.box.value+='c'">
+                <input type="button" class="row" value="v" onclick="display.box.value+='v'">
+                <input type="button" class="row" value="b" onclick="display.box.value+='b'">
+                <input type="button" class="row" value="n" onclick="display.box.value+='n'">
+                <input type="button" class="row" value="m" onclick="display.box.value+='m'">
+                <input type="button" class="back" value="BackSpace" onclick="display.box.value=display.box.value.toString().slice(0,-1)">
+            </div>
+            <div class="button3">
+                <a href="num.html">
+                <input type="button" class="num" value="?123"></a>
+                <input type="button" class="row" value="," onclick="display.box.value+=','">
+                <input type="button" class="lag" value="lag">
+                <input type="button" class="space" value="space">
+                <input type="button" class="row" value="." onclick="display.box.value+='.'">
+                <input type="button" class="enter" value="Enter">
+            </div>
+        </form>
+        <form>
+            <input list="letter" id="letter">
+            <datalist id="letter">
+                <option type="button" value="Capital Letter">
+                <option type="button" value="Small Letter">
+                <option type="button" value="First Capital">
+            </datalist>
+        </form>
+    </div>
+</body>
+        
+
+       
